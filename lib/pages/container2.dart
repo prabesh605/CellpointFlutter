@@ -55,7 +55,7 @@ class _Container2State extends State<Container2> {
                   ),
                 ),
                 Positioned(
-                  top: 54,
+                  top: 28,
                   left: 43,
                   right: 43,
                   bottom: 0,
@@ -119,7 +119,7 @@ class _Container2State extends State<Container2> {
               top: 20,
             ),
             child: Container(
-              height: w! / 2.2,
+              height: w! / 2.08,
 
               width: double.infinity,
               child: const ImageSlider(),

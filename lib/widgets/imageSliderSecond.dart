@@ -11,9 +11,12 @@ class ImageSliderSecond extends StatefulWidget {
 class _ImageSliderSecondState extends State<ImageSliderSecond> {
   List imageList = [
     {"id": 1, "image_path": 'assets/image1.jpg'},
-    {"id": 2, "image_path": 'assets/image11.jpg'},
-    {"id": 3, "image_path": 'assets/image22.jpg'},
-    {"id": 4, "image_path": 'assets/iphoneimage.jpg'},
+    {"id": 2, "image_path": 'assets/image22.jpg'},
+    {"id": 3, "image_path": 'assets/point5.jpg'},
+    {"id": 4, "image_path": 'assets/point4.jpg'},
+    {"id": 5, "image_path": 'assets/point3.jpg'},
+    {"id": 6, "image_path": 'assets/point2.jpg'},
+    {"id": 7, "image_path": 'assets/point1.jpg'},
   ];
   final CarouselController carouselController = CarouselController();
   int currentIndex = 0;
@@ -41,7 +44,7 @@ class _ImageSliderSecondState extends State<ImageSliderSecond> {
                 options: CarouselOptions(
                   scrollPhysics: const BouncingScrollPhysics(),
                   autoPlay: true,
-                  aspectRatio: 2,
+                  aspectRatio: 4 / 3,
                   viewportFraction: 1,
                   onPageChanged: (index, reason) {
                     setState(() {

@@ -89,7 +89,7 @@ class _Container1State extends State<Container1> {
           ),
           Expanded(
               child: Container(
-            padding: const EdgeInsets.only(top: 80),
+            padding: const EdgeInsets.only(top: 50),
             height: 530,
             child: const ImageSliderSecond(),
             // decoration: const BoxDecoration(
@@ -118,8 +118,8 @@ class _Container1State extends State<Container1> {
         children: [
           Container(
             padding: const EdgeInsets.only(top: 120),
-            height: w! / 1.2,
-            width: w! / 1.2,
+            height: w! / .9,
+            width: w! / .9,
             child: const ImageSliderSecond(),
             // decoration: BoxDecoration(
             //   image: DecorationImage(

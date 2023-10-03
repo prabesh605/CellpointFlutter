@@ -11,8 +11,8 @@ class ImageSlider extends StatefulWidget {
 class _ImageSliderState extends State<ImageSlider> {
   List imageList = [
     {"id": 2, "image_path": 'assets/image33.jpg'},
-    {"id": 3, "image_path": 'assets/cellpoint2.jpg'},
     {"id": 1, "image_path": 'assets/cellpointbackground.jpg'},
+    {"id": 3, "image_path": 'assets/cellpointnew.jpg'},
   ];
   final CarouselController carouselController = CarouselController();
   int currentIndex = 0;
@@ -40,7 +40,7 @@ class _ImageSliderState extends State<ImageSlider> {
                 options: CarouselOptions(
                   scrollPhysics: const BouncingScrollPhysics(),
                   autoPlay: true,
-                  aspectRatio: 2,
+                  aspectRatio: 5 / 2.6,
                   viewportFraction: 1,
                   onPageChanged: (index, reason) {
                     setState(() {

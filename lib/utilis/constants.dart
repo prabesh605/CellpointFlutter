@@ -22,3 +22,4 @@ const String logopng = 'assets/cellpointlogo.png';
 const String logoonly = 'assets/logoonly.png';
 const String logoname = 'assets/logoname.png';
 const String logowhite = 'assets/logowhite.jpg';
+const String cellpointnew = 'assets/cellpointnew.jpg';
