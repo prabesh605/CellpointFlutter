@@ -287,7 +287,7 @@ class _ContainerLastState extends State<ContainerLast> {
                       children: [
                         Row(
                           children: [
-                            SizedBox(
+                            const SizedBox(
                               width: 2,
                             ),
                             Container(
@@ -302,7 +302,7 @@ class _ContainerLastState extends State<ContainerLast> {
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         const Row(

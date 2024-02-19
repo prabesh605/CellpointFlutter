@@ -14,9 +14,13 @@ class Container2 extends StatefulWidget {
 class _Container2State extends State<Container2> {
   @override
   Widget build(BuildContext context) {
-    return ScreenTypeLayout.builder(
-      mobile: (BuildContext context) => mobileContainer(),
-      desktop: (BuildContext context) => desktopContainer1(),
+    return LayoutBuilder(
+      builder: (BuildContext context, BoxConstraints constraints) {
+        return ScreenTypeLayout.builder(
+          mobile: (BuildContext context) => mobileContainer(),
+          desktop: (BuildContext context) => desktopContainer1(),
+        );
+      },
     );
   }
 
@@ -118,7 +122,7 @@ class _Container2State extends State<Container2> {
               bottom: 0,
               top: 20,
             ),
-            child: Container(
+            child: SizedBox(
               height: w! / 2.08,
 
               width: double.infinity,
