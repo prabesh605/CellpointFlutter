@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+import 'package:web_app_new/pages/dashboard/dashboard.dart';
 import 'package:web_app_new/utilis/colors.dart';
 import 'package:web_app_new/utilis/constants.dart';
 import 'package:web_app_new/utilis/scroll.dart';
@@ -24,7 +26,7 @@ class _ContainerLastState extends State<ContainerLast> {
 
   Widget desktopContainerLast() {
     return Container(
-      height: 200,
+      height: h! / 2.4,
       width: double.infinity,
       decoration: BoxDecoration(color: AppColors.primary.withOpacity(0.9)),
       child: Stack(
@@ -149,6 +151,16 @@ class _ContainerLastState extends State<ContainerLast> {
                               child: const Text(
                                 'Accessories',
                                 style: TextStyle(color: Colors.black87),
+                              ),
+                            ),
+                            GestureDetector(
+                              onTap: () {
+                                Get.toNamed('/login');
+                              },
+                              child: const Text(
+                                'Admin login',
+                                style: TextStyle(
+                                    fontSize: 14, color: Colors.black87),
                               ),
                             ),
                           ],

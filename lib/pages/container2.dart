@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+import 'package:web_app_new/Sliders/SliderSecond.dart';
 import 'package:web_app_new/utilis/colors.dart';
 import 'package:web_app_new/utilis/constants.dart';
 import 'package:web_app_new/widgets/imageSlider.dart';
@@ -64,17 +65,18 @@ class _Container2State extends State<Container2> {
                   right: 43,
                   bottom: 0,
                   child: Container(
-                    padding:
-                        const EdgeInsets.only(left: 70, right: 70, top: 70),
-                    width: double.infinity,
-                    height: 800,
-                    child: const ImageSlider(),
-                    // decoration: BoxDecoration(
-                    //   image: DecorationImage(
-                    //     image: AssetImage(cellpointbackground),
-                    //   ),
-                    // ),
-                  ),
+                      padding:
+                          const EdgeInsets.only(left: 70, right: 70, top: 70),
+                      width: double.infinity,
+                      height: 800,
+                      child: const SliderSecond(isClient: false)
+                      // const ImageSlider(),
+                      // decoration: BoxDecoration(
+                      //   image: DecorationImage(
+                      //     image: AssetImage(cellpointbackground),
+                      //   ),
+                      // ),
+                      ),
                 )
               ],
             ),
@@ -123,16 +125,15 @@ class _Container2State extends State<Container2> {
               top: 20,
             ),
             child: SizedBox(
-              height: w! / 2.08,
-
-              width: double.infinity,
-              child: const ImageSlider(),
-              // decoration: const BoxDecoration(
-              //   image: DecorationImage(
-              //       image: AssetImage(cellpointbackground),
-              //       fit: BoxFit.contain),
-              // ),
-            ),
+                height: w! / 2.08,
+                width: double.infinity,
+                child: const SliderSecond(isClient: false)
+                // decoration: const BoxDecoration(
+                //   image: DecorationImage(
+                //       image: AssetImage(cellpointbackground),
+                //       fit: BoxFit.contain),
+                // ),
+                ),
           ),
           Container(
             width: double.infinity,
